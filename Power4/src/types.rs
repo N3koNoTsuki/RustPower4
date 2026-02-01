@@ -1,0 +1,1 @@
+//This files is for struct/enum only
