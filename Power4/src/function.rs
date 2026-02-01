@@ -9,9 +9,23 @@ pub fn add( a: i8, b: i8) -> i8
     return c;
 }
 
+
+/// # display_grid
+///
+/// Affiche la grille de jeu dans la console en ASCII.
+///
+/// - `a`: matrice `H x W` contenant les valeurs de chaque case.
+///
+/// # Exemple
+/// ```rust
+/// use crate::constants;
+/// use crate::function::display_grid;
+///
+/// let grid = [[0i8; constants::W]; constants::H];
+/// display_grid(grid);
+/// ```
 pub fn display_grid(a : [[i8; constants::W]; constants::H])
 {
-    
     for h in 0..(2*constants::H + 1) {
         for w in 0..constants::W {
 
