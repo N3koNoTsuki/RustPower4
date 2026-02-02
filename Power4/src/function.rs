@@ -24,13 +24,14 @@ pub fn add( a: i8, b: i8) -> i8
 /// let grid = [[0i8; constants::W]; constants::H];
 /// display_grid(grid);
 /// ```
+/// 
 pub fn display_grid(a : [[i8; constants::W]; constants::H])
 {
     for h in 0..(2*constants::H + 1) {
         for w in 0..constants::W {
 
             if h%2 == 1 {
-                print!("{}|", a[w][h/2] );
+                print!("{}|", a[h/2][w] );
             }
             else {
                 print!("+-");
@@ -40,7 +41,7 @@ pub fn display_grid(a : [[i8; constants::W]; constants::H])
             print!("\n\r");
         }
         else if h == (2*constants::H) {
-            print!("+");
+            print!("+\n\r");
         }
         else {
             print!("+\n\r|");

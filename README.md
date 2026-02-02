@@ -17,3 +17,9 @@ cargo run
 ```powershell
 cargo build
 ```
+
+## Resources
+
+```text
+https://doc.rust-lang.org/book/title-page.html
+```
